@@ -29,10 +29,12 @@ const handleCardClick = (data: CardData): void => {
 };
 
 const cardSection = new Section<CardData> (
-    initialCards,
-    (item) => {
-        const card = new Card(item, "#card-template", handleCardClick);
-        return card.generateCard();
+    {
+        items: initialCards,
+        renderer: (item) => {
+            const card = new Card(item, "#card-template", handleCardClick);
+            return card.generateCard();
+        },
     },
     ".cards__list"
 )

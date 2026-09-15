@@ -20,9 +20,12 @@ const imageZoomPopup = new PopupWithImage("#image-popup");
 const handleCardClick = (data) => {
     imageZoomPopup.open(data);
 };
-const cardSection = new Section(initialCards, (item) => {
-    const card = new Card(item, "#card-template", handleCardClick);
-    return card.generateCard();
+const cardSection = new Section({
+    items: initialCards,
+    renderer: (item) => {
+        const card = new Card(item, "#card-template", handleCardClick);
+        return card.generateCard();
+    },
 }, ".cards__list");
 cardSection.renderItems();
 /* ================== POPUPS ================== */
@@ -50,4 +53,3 @@ openEditProfilePopupBtn.addEventListener("click", () => {
 openNewCardPopupBtn.addEventListener("click", () => {
     newCardPopup.open();
 });
-//# sourceMappingURL=index.js.map

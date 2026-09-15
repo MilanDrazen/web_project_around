@@ -28,4 +28,3 @@ export class Popup {
         });
     }
 }
-//# sourceMappingURL=Popup.js.map

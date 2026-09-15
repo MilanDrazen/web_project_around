@@ -2,7 +2,7 @@ export class Section {
     items;
     renderer;
     container;
-    constructor(items, renderer, containerSelector) {
+    constructor({ items, renderer }, containerSelector) {
         this.items = items;
         this.renderer = renderer;
         this.container = document.querySelector(containerSelector);
@@ -17,4 +17,3 @@ export class Section {
         this.container.prepend(element);
     }
 }
-//# sourceMappingURL=Section.js.map

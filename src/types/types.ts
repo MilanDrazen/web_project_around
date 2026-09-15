@@ -19,3 +19,8 @@ export interface UserSelectors {
   nameSelector: string;
   descriptionSelector: string;
 }
+
+export interface SectionConfig<T> {
+  items: T[];
+  renderer: (item: T) => HTMLElement;
+}

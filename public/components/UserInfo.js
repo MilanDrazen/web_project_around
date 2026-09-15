@@ -16,4 +16,3 @@ export class UserInfo {
         this.descriptionElement.textContent = data.description;
     }
 }
-//# sourceMappingURL=UserInfo.js.map

@@ -2,8 +2,10 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
-    // "outDir": "./dist",
+    "rootDir": "./src",
+    "outDir": "./public",
+    // Buenas, habia tenido problemas al subir el proyecto a la plataforma,
+    // por lo que re-cree el tsconfig y olvidé modificar rootDir y outDir, ya están bien
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module

@@ -1,13 +1,11 @@
+import type { SectionConfig } from "../types/types.js";
+
 export class Section<T> {
     private items: T[];
     private renderer: (item: T) => HTMLElement;
     private container: HTMLElement;
 
-    constructor(
-        items: T[],
-        renderer: (item: T) => HTMLElement,
-        containerSelector: string
-    ) {
+    constructor({ items, renderer }: SectionConfig<T>, containerSelector: string) {
         this.items = items;
         this.renderer = renderer;
         this.container = document.querySelector(containerSelector) as HTMLElement;

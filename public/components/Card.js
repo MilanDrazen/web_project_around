@@ -38,4 +38,3 @@ export class Card {
         return this.element;
     }
 }
-//# sourceMappingURL=Card.js.map
