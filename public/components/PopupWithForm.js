@@ -18,10 +18,23 @@ export class PopupWithForm extends Popup {
         });
         return values;
     }
-    handleSubmit = (evt) => {
+    handleSubmit = async (evt) => {
         evt.preventDefault();
-        this.handleFormSubmit(this.getInputValues());
-        this.close();
+        const submitButton = this.formElement.querySelector(".popup__button");
+        const originalText = submitButton.textContent ?? "Guardar";
+        submitButton.textContent = "Guardando...";
+        submitButton.disabled = true;
+        try {
+            await this.handleFormSubmit(this.getInputValues());
+        }
+        catch (err) {
+            console.error("Error en el envío del formulario:", err);
+        }
+        finally {
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+            this.close();
+        }
     };
     setEventListeners() {
         super.setEventListeners();

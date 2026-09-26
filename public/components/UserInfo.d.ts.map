@@ -1,1 +1,0 @@
-{"version":3,"file":"UserInfo.d.ts","sourceRoot":"","sources":["../../src/components/UserInfo.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,aAAa,EAAE,QAAQ,EAAE,MAAM,mBAAmB,CAAC;AAEjE,qBAAa,QAAQ;IACjB,OAAO,CAAC,WAAW,CAAc;IACjC,OAAO,CAAC,kBAAkB,CAAc;IAExC,YAAa,aAAa,EAAE,aAAa,EAGxC;IAEM,WAAW,IAAI,QAAQ,CAK7B;IAEM,WAAW,CAAC,IAAI,EAAE,QAAQ,GAAG,IAAI,CAGvC;CACJ"}
