@@ -3,7 +3,7 @@
   "compilerOptions": {
     // File Layout
     "rootDir": "./src",
-    "outDir": "./public",
+    "outDir": "docs",
     // Buenas, habia tenido problemas al subir el proyecto a la plataforma,
     // por lo que re-cree el tsconfig y olvidé modificar rootDir y outDir, ya están bien
 
